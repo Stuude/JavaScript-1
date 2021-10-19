@@ -1,12 +1,19 @@
-body {
-  margin: 0 auto;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-section{
-  display:flex;
-  justify-content: center;
+body{
+    background-color: #F1F2F4;
+    font-size: 67.5%;
 }
+
+body #bloc_page{
+    width: 100%;
+    margin: auto;
+}
+
+/* utils */
 
 .flex_row{
     display: flex;
@@ -21,6 +28,28 @@ section{
 .flex_defaultcolumn{
     display: flex;
     flex-flow: nowrap column;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    padding: 6px;
+    background: linear-gradient(rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.9));
+}
+
+header nav{
+    width: 30%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 10px;
 }
 
 /* bloc presentation */
@@ -118,9 +147,4 @@ body #bloc_section{
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-}
-
-
-#section_akin{
-    background-color:gray !important;
 }

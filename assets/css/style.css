@@ -20,14 +20,25 @@ div img{
   width: 75%;
   height: auto;
 }
+.perso-Cristian{
+  margin-top: 50px;
+}
+.img-cristian{
+  width: 50%;
+}
 
-
-div{
+.titre-luna{
+  color:blue;
+}
+.card-texte-luna{
+  border: solid black 1px;
+  width: 50%;
+}
+/* div{ */
     /* background: red; */
     /* border: solid black 1px; */
     /* margin: 0 40% 0 40%; */
-}
-
+/* } */
 /* div p{
     color: white;
     text-align: center;

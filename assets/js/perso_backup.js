@@ -1,3 +1,11 @@
+
+
+    
+
+let monperso = new Personnage("Luna","Carry","Nova","Tarasque",150);
+console.log("Mon Perso s'appelle "+monperso.name + " c'est un " + monperso.category + " il possede l'item " + monperso.items + " donc sa defense passe a " + monperso.defense(39) + " ce qui lui permet de survire a l'attaque");
+
+
 class Perso {
   constructor(name, weight, annee, equipement, shard, pv, talisman) {
       this.name = name;
@@ -30,6 +38,9 @@ console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso
 
 
 
+
+
+//   alert("Mon joueur s'appelle "+ personnage.firstName + " "+ personnage.lastName + " Il pese "+ personnage.poids+ "kg C'est un " + personnage.rank + " de l'armee du dieu Mene. C'est un " +personnage.category[0] +" ainsi qu'un "+personnage.category[1]   );
 
 // const perso = {
 //   name : "Sorken",
@@ -64,3 +75,4 @@ console.log("Mon Perso a " + myperso.anneeFormat() + " Et il s'appel " + myperso
 // // accesseurs
 //
 // alert("Mon joueur s'appel "+perso.name + ", il pese " + weight + ",il est né en l'an " + perso.année+"et possede une "+perso.equipement+"Ainsi qu'un atout de type"+perso.shard+"il un nombre de pv égale a "+perso.pv);
+
