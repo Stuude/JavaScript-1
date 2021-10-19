@@ -94,20 +94,6 @@ document.getElementById("Wolf").innerHTML=
 
 
 
-// class Akin
-class Azerty {
-  constructor(name, genre, pv, equipement) {
-      this.name = name;
-      this.genre = genre;
-      this.pv = pv;
-      this.equipement = equipement;
-  }
-}
-let myazerty = new Azerty("Azerty", "gorille", 200, "M4");
-document.getElementById("persoAzerty").innerHTML= "Mon perso est un " + myazerty.genre + ", on le nomme " + myazerty.name;
-document.getElementById("azertyName").innerHTML = myazerty.name;
-document.getElementById("interactAzerty").innerHTML = "<br><strong> "+myazerty.name + "</strong> est un " + myazerty.genre + " bien costaud avec " + myazerty.pv + "PV qui vient s'échapper du Zoo et se procure une " + myazerty.equipement + ". Il se tient devant " + myperso.name +" pret à attaquer";
-
 
 // classe Perso PrBe
 class Bonhomme{
@@ -125,4 +111,3 @@ class Bonhomme{
 var mybonhomme = new Bonhomme("Bonhomme", 100, 5, 10, 15, true);
 var textbonhomme ="Ce perso s'appelle "+ mybonhomme.Nom + " Voici ses stats : " + mybonhomme.vie + "Pv " + mybonhomme.armure + " d'armure " + mybonhomme.attaque + " de dégâts.";
 document.getElementById('presentation').innerHTML = textbonhomme;
-
