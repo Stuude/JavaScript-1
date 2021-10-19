@@ -1,20 +1,19 @@
 /* Partie Julien */
 class Perso {
   constructor(name, weight, annee, equipement, shard, pv, talisman) {
-    this.name = name;
-    this.weight = weight;
-    this.annee = annee;
-    this.equipement = equipement;
-    this.shard = shard;
-    this.pv = pv;
-    this.talisman = talisman;
+      this.name = name;
+      this.weight = weight;
+      this.annee = annee;
+      this.equipement = equipement;
+      this.shard = shard;
+      this.pv = pv;
+      this.talisman = talisman;
   }
 
   anneeFormat() {
     let date = new Date();
     return date.getFullYear() - this.annee;
   }
-
 
   attaque(x){
     return x + this.weight + 15;
@@ -67,24 +66,12 @@ class Avatar{
   }
 }
 
-
 var avatar = new Avatar("Goku");
 avatar.presentation();
 avatar.changePropertie(avatar, "name_jm", "Goku");
 avatar.destroy(myperso);
 
 // Code personnage Michel
-
-
-
-// Code Gregor
-class Roll {
-  constructor(name, age, power, sexe, weapon){
-    this.name = name;
-    this.age = age;
-    this.power = power;
-    this.sexe = sexe;
-    this.weapon = weapon;
 
 class random {
   constructor(name, age, equipement, passive, pv) {
@@ -94,9 +81,8 @@ class random {
             this.passive = passive;
             this.pv = pv;
 
-
+            
     }
-
   }
 
 let randomhero = new random("Worgen", 20, "Cloves", "Force surnaturelle", "150");
@@ -105,73 +91,6 @@ document.getElementById("Wolf").innerHTML=
 
 
 
-
-
-
-
-
-
-//Le perso de Cristian
-
-class Personnage {
-  constructor(name, category, monture, items, pv) {
-    this.name = name;
-    this.category = category;
-    this.monture = monture;
-    this.items = items;
-    this.pv = pv;
-  }
-
-
-  attaque(atk) {
-    if (this.items == "DivineRapier") {
-      return atk + 31;
-    }
-    else if (this.items == "Aghanim") {
-      return atk + 20;
-    }
-    else  {
-      return atk + 7;
-    }
-  }
-  defense(def) {
-    if (this.items == "Tarasque") {
-      return def + 98;
-    }
-    else if (this.items != "Tarasque") {
-      return def - 15;
-    }
-  }
-  mana(mp) {
-    if (this.items == "Bloodstone") {
-      return mp + 25;
-    }
-    else if (this.items != "Bloodstone") {
-      return mp + 2;
-    }
-  }
-}
-
-
-var tableauItems=["DivineRapier", "Aghanim","Tarasque","Bloodstone"];
-var indiceRandom =Math.floor(Math.random() * (tableauItems.length - 0)) + 0
-document.write(indiceRandom)
-
-let monperso = new Personnage("Luna", "Rider", "Nova", tableauItems[indiceRandom], 150);
-
-document.getElementById("persoLuna").innerHTML = "Mon Perso est " + monperso.name + " c'est un " + monperso.category + " sa monture s'appelle " + monperso.monture +" son equipement est  : " + monperso.items;
-document.getElementById("lunaname").innerHTML = monperso.name;
-
-if(monperso.items == "Tarasque")
-{
-  document.getElementById("luna-interact").innerHTML = " Grace a son item  Tarasque <br><strong> " + monperso.name + "</strong> recoit + 98 defense, sa defense passe a " + monperso.defense(50) +" elle survit a l'attaque ";
-}
-else {
-  document.getElementById("luna-interact").innerHTML = "Ne pouvant pas se defendre Luna lance une derniere attaque de " + monperso.attaque(98);
-}
-
-
-// FIN PERSO CRISTIAN
 
 
 
